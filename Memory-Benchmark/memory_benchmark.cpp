@@ -24,3 +24,12 @@ void MemoryBenchmark(){
 
     delete [] nums;
 }
+
+int main(){
+
+    auto start = high_resolution_clock::now();
+
+    MemoryBenchmark();
+
+    auto stop = high_resolution_clock::now();
+}
